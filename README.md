@@ -11,7 +11,7 @@ Original image:
 
 View examples:  
 /Home/FlipVertical  
-/Home/FlipHorizontal
-/Home/FlipBoth
+/Home/FlipHorizontal  
+/Home/FlipBoth  
 
 Hope it is useful
