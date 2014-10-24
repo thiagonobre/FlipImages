@@ -6,30 +6,28 @@ using System.Drawing;
 
 namespace DrawingStudy
 {
-    public class Main
+    public static class Main
     {
-        public static Bitmap FlipVertical(Image img)
+        public static Bitmap FlipVertical(this Bitmap bmp)
         {
-            Bitmap bmp = new Bitmap(img);
-
-            int x = img.Width / 2;
-
-            if (x % 2 == 0) x--;
-
-            for (; x >= 0; x--)
+            if (bmp == null)
             {
-                int y = img.Height / 2;
+                return null;
+            }
 
-                if (y % 2 == 0) y--;
+            int x, y, i, j;
 
-                for (; y >= 0; y--)
+            for (i = 0, x = (int)Math.Ceiling((double)bmp.Width / 2); i < x; i++)
+            {
+
+                for (j = 0, y = (int)Math.Ceiling((double)bmp.Height / 2); j < y; j++)
                 {
                     int x1, y1, x2, y2;
 
-                    x1 = x;
-                    y1 = y;
-                    x2 = img.Width - x - 1;
-                    y2 = img.Height - y - 1;
+                    x1 = i;
+                    y1 = j;
+                    x2 = bmp.Width - i - 1;
+                    y2 = bmp.Height - j - 1;
 
 
                     var pixel1 = bmp.GetPixel(x1, y1);
@@ -46,28 +44,25 @@ namespace DrawingStudy
             return bmp;
         }
 
-        public static Bitmap FlipHorizontal(Image img)
+        public static Bitmap FlipHorizontal(this Bitmap bmp)
         {
-            Bitmap bmp = new Bitmap(img);
-
-            int x = img.Width / 2;
-
-            if (x % 2 == 0) x--;
-
-            for (; x >= 0; x--)
+            if (bmp == null)
             {
-                int y = img.Height / 2;
-                
-                if (y % 2 == 0) y--;
+                return null;
+            }
 
-                for (; y >= 0; y--)
+            int x, y, i, j;
+
+            for (i = 0, x = (int)Math.Ceiling((double)bmp.Width / 2); i < x; i++)
+            {
+                for (j = 0, y = (int)Math.Ceiling((double)bmp.Height / 2); j < y; j++)
                 {
                     int x1, y1, x2, y2;
 
-                    x1 = x;
-                    y1 = y;
-                    x2 = img.Width - x - 1;
-                    y2 = img.Height - y - 1;
+                    x1 = i;
+                    y1 = j;
+                    x2 = bmp.Width - i - 1;
+                    y2 = bmp.Height - j - 1;
 
 
                     var pixel1 = bmp.GetPixel(x1, y1);

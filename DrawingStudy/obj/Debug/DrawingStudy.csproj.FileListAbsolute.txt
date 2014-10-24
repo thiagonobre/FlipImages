@@ -1,5 +1,0 @@
-C:\Users\nobret\Documents\Visual Studio 2010\Projects\DrawingStudy\DrawingStudy\bin\Debug\DrawingStudy.dll
-C:\Users\nobret\Documents\Visual Studio 2010\Projects\DrawingStudy\DrawingStudy\bin\Debug\DrawingStudy.pdb
-C:\Users\nobret\Documents\Visual Studio 2010\Projects\DrawingStudy\DrawingStudy\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\nobret\Documents\Visual Studio 2010\Projects\DrawingStudy\DrawingStudy\obj\Debug\DrawingStudy.dll
-C:\Users\nobret\Documents\Visual Studio 2010\Projects\DrawingStudy\DrawingStudy\obj\Debug\DrawingStudy.pdb

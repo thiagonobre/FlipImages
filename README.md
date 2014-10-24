@@ -4,6 +4,7 @@ FlipImages
 C# Flipping Images Using System.Drawing
 
 ASP.NET MVC 4
+.NET Framework 3.5+
 
 Original image:  
 /Home/
@@ -11,3 +12,6 @@ Original image:
 View examples:  
 /Home/FlipVertical  
 /Home/FlipHorizontal
+/Home/FlipBoth
+
+Hope it is useful
